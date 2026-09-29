@@ -73,7 +73,7 @@ function LedgerReports() {
     try {
       const response =
         await fetch(
-          "http://127.0.0.1:8000/api/ledger/",
+          "https://pos-billing-system-ldhr.onrender.com/api/ledger/",
           {
             headers: {
               Authorization:
@@ -244,7 +244,7 @@ function LedgerReports() {
     try {
       const response =
         await fetch(
-          "http://127.0.0.1:8000/api/ledger/",
+          "https://pos-billing-system-ldhr.onrender.com/api/ledger/",
           {
             method: "POST",
 

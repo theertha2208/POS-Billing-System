@@ -42,7 +42,7 @@ function Suppliers() {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/api/suppliers/",
+        "https://pos-billing-system-ldhr.onrender.com/api/suppliers/",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -140,13 +140,13 @@ function Suppliers() {
     }
 
     let url =
-      "http://127.0.0.1:8000/api/suppliers/"
+      "https://pos-billing-system-ldhr.onrender.com/api/suppliers/"
 
     let method = "POST"
 
     if (editingSupplier) {
       url =
-        `http://127.0.0.1:8000/api/suppliers/${editingSupplier.id}/`
+        `https://pos-billing-system-ldhr.onrender.com/api/suppliers/${editingSupplier.id}/`
 
       method = "PUT"
     }
@@ -276,7 +276,7 @@ function Suppliers() {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/api/suppliers/${supplier.id}/`,
+        `https://pos-billing-system-ldhr.onrender.com/api/suppliers/${supplier.id}/`,
         {
           method: "DELETE",
 

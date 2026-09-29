@@ -80,7 +80,7 @@ function Products() {
       try {
         const response =
           await fetch(
-            "http://127.0.0.1:8000/api/products/",
+            "https://pos-billing-system-ldhr.onrender.com/api/products/",
             {
               headers: {
                 Authorization:
@@ -135,7 +135,7 @@ function Products() {
       try {
         const response =
           await fetch(
-            "http://127.0.0.1:8000/api/suppliers/",
+            "https://pos-billing-system-ldhr.onrender.com/api/suppliers/",
             {
               headers: {
                 Authorization:
@@ -257,7 +257,7 @@ function Products() {
 
 
       let url =
-        "http://127.0.0.1:8000/api/products/"
+        "https://pos-billing-system-ldhr.onrender.com/api/products/"
 
       let method =
         "POST"
@@ -266,7 +266,7 @@ function Products() {
       if (editingProduct) {
 
         url =
-          `http://127.0.0.1:8000/api/products/${editingProduct.id}/`
+          `https://pos-billing-system-ldhr.onrender.com/api/products/${editingProduct.id}/`
 
         method =
           "PUT"
@@ -424,7 +424,7 @@ function Products() {
 
         const response =
           await fetch(
-            `http://127.0.0.1:8000/api/products/${product.id}/`,
+            `https://pos-billing-system-ldhr.onrender.com/api/products/${product.id}/`,
             {
               method:
                 "DELETE",

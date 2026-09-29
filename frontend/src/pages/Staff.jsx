@@ -81,7 +81,7 @@ function Staff() {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:8000/api/staff/",
+        "https://pos-billing-system-ldhr.onrender.com/api/staff/",
         {
           headers: {
             Authorization:
@@ -254,14 +254,14 @@ function Staff() {
       }
 
       let url =
-        "http://127.0.0.1:8000/api/staff/"
+        "https://pos-billing-system-ldhr.onrender.com/api/staff/"
 
       let method =
         "POST"
 
       if (editingStaff) {
         url =
-          `http://127.0.0.1:8000/api/staff/${editingStaff.id}/`
+          `https://pos-billing-system-ldhr.onrender.com/api/staff/${editingStaff.id}/`
 
         method =
           "PUT"
@@ -441,7 +441,7 @@ function Staff() {
 
         const response =
           await fetch(
-            `http://127.0.0.1:8000/api/staff/${member.id}/`,
+            `https://pos-billing-system-ldhr.onrender.com/api/staff/${member.id}/`,
             {
               method:
                 "DELETE",
@@ -513,7 +513,7 @@ function Staff() {
 
         const response =
           await fetch(
-            `http://127.0.0.1:8000/api/staff/${member.id}/`,
+            `https://pos-billing-system-ldhr.onrender.com/api/staff/${member.id}/`,
             {
               method:
                 "PATCH",

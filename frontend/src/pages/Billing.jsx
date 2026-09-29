@@ -99,7 +99,7 @@ function Billing() {
     try {
       const response =
         await fetch(
-          "http://127.0.0.1:8000/api/products/",
+          "https://pos-billing-system-ldhr.onrender.com/api/products/",
           {
             headers: {
               Authorization:
@@ -374,7 +374,7 @@ function Billing() {
       try {
         const response =
           await fetch(
-            "http://127.0.0.1:8000/api/complete-sale/",
+            "https://pos-billing-system-ldhr.onrender.com/api/complete-sale/",
             {
               method: "POST",
 

@@ -81,7 +81,7 @@ function ProductReturns() {
         returnsResponse,
       ] = await Promise.all([
         fetch(
-          "http://127.0.0.1:8000/api/bills/",
+          "https://pos-billing-system-ldhr.onrender.com/api/bills/",
           {
             headers: {
               Authorization:
@@ -91,7 +91,7 @@ function ProductReturns() {
         ),
 
         fetch(
-          "http://127.0.0.1:8000/api/returns/",
+          "https://pos-billing-system-ldhr.onrender.com/api/returns/",
           {
             headers: {
               Authorization:
@@ -304,7 +304,7 @@ function ProductReturns() {
       try {
         const response =
           await fetch(
-            "http://127.0.0.1:8000/api/process-return/",
+            "https://pos-billing-system-ldhr.onrender.com/api/process-return/",
             {
               method:
                 "POST",
