@@ -1,0 +1,39 @@
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Django database
+db.sqlite3
+*.sqlite3
+
+# Django generated files
+staticfiles/
+media/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# React / Node
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+build/
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
